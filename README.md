@@ -6,6 +6,8 @@ This project focuses on automating repetitive tasks in facade and cladding plann
 
 The toolkit is based on Python, CAD APIs, Excel workflows, Visual Studio / VS Code and AI-assisted development with Codex.
 
+See also: [Extended overview](README_EXTENDED.md), [Script catalog](docs/script_catalog.md), [Roadmap](docs/roadmap.md), and [Privacy/Sanitization](docs/privacy_and_sanitization.md).
+
 ## Why this project exists
 
 Facade and curtain wall engineering teams often work under tight deadlines while handling large amounts of drawing data, fabrication information, Excel schedules, profile lists, glass names and revision changes.
@@ -38,6 +40,8 @@ Codex and AI-assisted development make it possible to turn practical engineering
 
 - `cw_facade_toolkit.excel_mto` - example utilities for reading simplified facade schedules and creating MTO summaries.
 - `cw_facade_toolkit.revision_compare` - example utilities for comparing two CSV-based drawing or fabrication schedules.
+- `cw_facade_toolkit.pdf_tools` - reusable PDF helpers for public drawing package workflows.
+- `cw_facade_toolkit.cad_com` - small helper utilities for CAD examples.
 
 These modules use simplified, non-confidential sample data. They are intended as a public starting point for real CAD/BIM automation workflows.
 
@@ -76,18 +80,19 @@ Run the sample revision comparison script:
 python scripts/example_revision_compare.py
 ```
 
+Run STEP annotation check:
+
+```bash
+python scripts/check_step_annotations.py --folder ./examples/step --output ./reports/step_dimension_check.csv
+```
+
 ## Open-source purpose
 
 The long-term goal is to build a practical open-source toolkit that can help facade planners, engineers, CAD users and construction companies automate complex work not only in Israel, but also internationally.
 
 ## Roadmap
 
-- Add sample CAD data structures using simplified non-confidential examples.
-- Add Python utilities for Excel-based MTO/BOM processing.
-- Add examples for naming glass panels and facade units.
-- Add scripts for revision comparison.
-- Add documentation for CAD automation workflows.
-- Add integration examples for AI-assisted engineering tools.
+See the detailed roadmap: [docs/roadmap.md](docs/roadmap.md).
 
 ## License
 
