@@ -1,0 +1,6 @@
+unit,item_type,part_name,quantity
+UNIT-01,glass,GL-01,12
+UNIT-01,profile,PR-100,24
+UNIT-02,glass,GL-02,8
+UNIT-02,profile,PR-100,16
+UNIT-COR,bracket,BR-COR-01,4
